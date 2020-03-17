@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="image/icon" href="./media/favicon.ico"/>
+    <title><Lepetilo/></title>
+</head>
+<body>
+    <section class="promo-container" id="home">
+        <header>
+            <div class="container">
+                <div class="nav-container">
+                    <nav>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Skills</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Price</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <h3>UX/UI Designer</h3>
+    </section>
+
+    <script>
+        document.body.style.cursor = "none";
+
+        var cursor = document.createElement("div");
+        cursor.classList.add("cursor");
+        document.body.appendChild(cursor);
+
+        var follow = document.createElement("div");
+        follow.classList.add("follow");
+        document.body.appendChild(follow);
+
+        function move(obj, event) {
+            obj.style = "";
+            obj.style.top = event.clientY + "px";
+            obj.style.left = event.clientX + "px";
+        }
+
+        if (cursor) {
+            window.addEventListener("mousemove", function(event) {
+                var e = event;
+                var t = e.target;
+                var f = follow;
+                var c = cursor;
+
+                move(c, e);
+                move(f, e);                
+            });
+        }
+    </script>
+</body>
+</html>
