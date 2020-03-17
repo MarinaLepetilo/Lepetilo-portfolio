@@ -7,7 +7,8 @@
 
 html {
     background-color: #f6f6f6;
-    overflow: hidden;
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
 }
 
 ::selection {
@@ -102,6 +103,66 @@ h3 {
     animation-iteration-count: infinite;
 }
 
+/*ABOUT*/
+
+.sec_container {
+	display: flex;
+}
+
+p {
+    font-family: yaldevi-l;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.sec_container p {
+    padding-top: 90px;
+}
+
+.text-about {
+	display: flex;
+	flex-direction: column;
+    margin-left: 300px;
+    padding-top: 220px;
+    align-items: center;
+    max-width: 400px;
+}
+
+.girl-pic {
+    display: flex;
+	justify-content: center;
+	padding-top: 130px;
+	padding-left: 140px;
+}
+
+.sec_container button {
+    margin-top: 75px;
+}
+
+button {
+     width: 195px;
+    height: 50px;
+    font-family: yaldevi-reg;
+    font-size: 18px;
+    color: #555;
+    border: solid 3px transparent;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(98.67deg, #FD4C6C 0.96%, #FF58BC 99.43%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #f6f6f6 inset;
+    cursor: pointer; 
+}
+
+button:hover { 
+    box-shadow: none;
+    color: #fff;
+    transition: .3s;
+}
+
+
+/*CURSOR*/
+
 .cursor,
 .follow {
     position: absolute;
@@ -140,6 +201,11 @@ h3 {
 @font-face {
 	font-family: yaldevi-ex-l;
 	src: url("../fonts/yaldevi/YaldeviColombo-ExtraLight.ttf");
+}
+
+@font-face {
+	font-family: yaldevi-l;
+	src: url("../fonts/yaldevi/YaldeviColombo-Light.ttf");
 }
 
 @font-face {
