@@ -243,7 +243,7 @@ button:hover {
   margin-left: 30%;
 }
 .blog .slider {
-  width: 100%;
+  width: 100vw;
 }
 .blog .slide {
   display: flex;
@@ -360,7 +360,7 @@ button:hover {
   background: rgba(255, 242, 245, 0.75);
 }
 .video {
-  height: 400px;
+  height: 100vw;
 }
 .price .container {
   flex-direction: column;

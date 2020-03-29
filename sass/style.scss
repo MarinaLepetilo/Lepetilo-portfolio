@@ -292,9 +292,7 @@ button:hover {
 }
 
 .blog .slider {
-    width: 100%;
-    // grid-column: 2/3;
-    // grid-row: 1/6;
+    width: 100vw;
 }
 
 .blog .slide {
@@ -551,7 +549,7 @@ $slider-bg-color: lighten($primary-background-color, 33%);
 
 
 .video {
-    height: 400px;
+    height: 100vw;
     // id: my-video;
     // class: video-js vjs-default-skin;
     // controls
