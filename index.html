@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="shortcut icon" type="image/icon" href="./media/favicon.ico"/>
     <title><Lepetilo/></title>
 </head>
-<body>
+<body>  
+
+    <div class="pointer"></div>
+
     <section class="promo-container" id="home">
         <header>
             <div class="container">
@@ -15,61 +23,245 @@
                     <nav>
                         <ul>
                             <li><a href="#about">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="#">Video</a></li>
-                            <li><a href="#">Price</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#video">Video</a></li>
+                            <li><a href="#price">Price</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
-            </div>
+            </div> 
         </header>
         <h3>UX/UI Designer</h3>
     </section>
 
-    <section class="about" id="about">
-        <div class="sec_container">
+ 
+
+    <section class="about">
+        <!-- <div class="sec_container"> -->
+        <div class="container">
             <div class="girl-pic">
-                <img src="./media/girl.png" alt="girl">
+                <img src="./media/girl.png" alt="girl" class="girl">
+                <img src="./media/vector_bold.svg" alt="" class="bold">
+                <img src="./media/vector_pink.svg" alt="" class="pink">
+                <img src="./media/vector_red.svg" alt="" class="red" id="about">
             </div>
             <div class="text-about">
-                <img src="./media/hey.svg" alt="hey">
+                <img class="img-butt" src="./media/hey.svg" alt="hey">
                 <p>My name is Marina Lepetilo, I’m passionate UX and UI designer who is also web-developer from Minsk. Amet luctus venenatis lectus magna fringilla urna. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo vel fringilla est ullamcorper.</p>
-                <button>Read more</button>
+                <button class="butt-img">Read more</button>
             </div>
         </div>
     </section>
 
-    <!-- <script>
-        document.body.style.cursor = "none";
+    <section class="blog" id="blog">
+        <div class="container">        
+            <h2 class="section-title price__title">Blog</h2>
+            <div class="slider">
+                <div class="slide">
+                    <img src="./media/slide2.jpg" alt="volcano">
+                    <!-- <div class="child-element"></div> -->
+                </div>
+                <div class="slide">
+                    <img src="./media/slide1.jpg" alt="milky way">
+                    <!-- <div class="child-element"></div> -->
+                </div>
+                <div class="slide">
+                    <img src="./media/slide3.jpg" alt="mountains">
+                    <!-- <div class="child-element"></div> -->
+                </div>
+            </div>
+        </div>
+    </section>
 
-        var cursor = document.createElement("div");
-        cursor.classList.add("cursor");
-        document.body.appendChild(cursor);
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+        <h2 class="section-title price__title">Portfolio</h2>
+        <div class="grid_container">
+            <div class="box">
+                <div class="content">
+                    <img src="./media/sea.jpg" alt="">
+                    <p>landing</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <img src="./media/sea.jpg" alt="">
+                    <p>landing</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <img src="./media/sea.jpg" alt="">
+                    <p>landing</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <img src="./media/sea.jpg" alt="">
+                    <p>landing</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <img src="./media/sea.jpg" alt="">
+                    <p>landing</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <img src="./media/sea.jpg" alt="">
+                    <p>landing</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <img src="./media/sea.jpg" alt="">
+                    <p>landing</p>
+                </div>
+            </div>            
+        </div>
+    </div>
+    </section>
 
-        var follow = document.createElement("div");
-        follow.classList.add("follow");
-        document.body.appendChild(follow);
+    <section class="video" id="video">
+        <!-- <video src="./media/Jellyfish - 26818.mp4" width="100%"></video> -->
+        <video 
+        id="my-video"
+    class="video-js vjs-default-skin"
+    controls
+    preload="auto"
+    width="1280"
+    height="528"
+    poster="./media/sea.jpg"
+    data-setup="{}" >
+        
+        <!-- id="my_video_1" class="video-js " width="640px" height="267px"
+      controls preload="none" poster='http://video-js.zencoder.com/oceans-clip.jpg'
+      data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'> -->
+    <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+    <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+    <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+        >
+      </p>
+  </video>
+</section>
 
-        function move(obj, event) {
-            obj.style = "";
-            obj.style.top = event.clientY + "px";
-            obj.style.left = event.clientX + "px";
-        }
+<section class="price" id="price">
+    <div class="container">
+        <h2 class="section-title price__title">Price</h2>
+        <div class="price-cards">
+            <div class="card">
+            <div class="color-circ first-circ">
+                <h3>Landing page</h3>
+                <h2>5$</h2>
+            </div>
+                <!-- <p>Read more</p> -->
+                <a href="#">Read more</a>
+            </div>
+            <div class="big-card">
+            <div class="color-circ sec-circ">
+                <h3>Online shop</h3>
+                <h2>6$</h2>
+            </div>
+                <!-- <p>Read more</p> -->
+                <a href="#">Read more</a>
+            </div>
+            <div class="card">
+            <div class="color-circ third-circ">
+                <h3>HTML/CSS</h3>
+                <h2>7$</h2>
+            </div>
+                <!-- <p>Read more</p> -->
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </div>
 
-        if (cursor) {
-            window.addEventListener("mousemove", function(event) {
-                var e = event;
-                var t = e.target;
-                var f = follow;
-                var c = cursor;
+</section>
 
-                move(c, e);
-                move(f, e);                
-            });
-        }
-    </script> -->
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="section-title contact__title">Contact</h2>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/xzbvwlkb" method="post">
+            <fieldset id="fs-frm-inputs">
+                <div class="group">
+                    <input type="text" name="name" id="full-name"  required="">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="full-name">How to adress you?</label>
+                </div>
+                <div class="group">
+                    <input type="email" name="_replyto" id="email-address"  required="">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="email-address">Email Address</label>
+                </div>
+                <div class="group">
+                    <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
+                    <!-- <input  name="_subject" id="email-subject" value="Contact Form Submission"> -->
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="message">Message</label>
+                </div>
+            </fieldset>
+            <button type="submit">Send</button>
+          </form>
+    </div>
+</section>
+
+<section class="quote">
+    <!-- <div class="container"> -->
+        <img src="./media/quotes.png" alt="quotes" srcset="">
+            <div class="slider">
+                <div class="slide">
+                    <p>If you hear a voice within you say 'you cannot paint,'
+then by all means paint and that voice will be silenced.</p>
+                    <img src="./media/van-gogh.svg" alt="" srcset="">
+                </div>
+                <div class="slide">
+                    <p>Color is my daylong obsession, joy, and torment.</p>
+                    <img src="./media/claude-monet.svg" alt="" srcset="">
+                </div>
+            </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container_footer">
+        <footer>
+            <div class="footer-img">
+                <img src="./media/pink_footer.svg" class="pink_f" alt="">
+                <img src="./media/red_footer.svg" class="red_f" alt="">
+                <img src="./media/bold_footer.svg" class="bold_f" alt="">
+            </div>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="https://dribbble.com/Lepetilo">Dribbble</a></li>
+                        <li><a href="https://www.behance.net/">Behance</a></li>
+                        <li><a href="https://www.linkedin.com/in/marina-lepetilo-032452195/">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/marin.lepetil/">Instagram</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<div id = "toTop" > ↑ </div>
+
+    <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/scrpt.js"></script>
+
 </body>
 </html>

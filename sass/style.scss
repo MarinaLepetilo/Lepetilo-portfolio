@@ -1,0 +1,1036 @@
+$radicalRed: #FD4C6C;
+$hotPink: #FF58BC;
+$white: #FFFFFF;
+$bg-color: #f1f1f1;
+$h-color: #D3D3D3;
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: url('../media/ellipse.svg'), auto;
+}
+
+html {
+    background-color: $bg-color;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+}
+
+.pointer {
+    position: absolute;
+    // top: 50%;
+    // left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border: 1px solid #FD4C6C;
+    border-radius: 50%;
+    pointer-events: none;
+    box-sizing: border-box;
+    transition: 0.15s;
+    cursor: dot;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(180deg, #FD4C6C 0%, #FF58BC 100%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(180deg, #FF58BC 0%, #FD4C6C 100%);
+}
+
+
+::-webkit-scrollbar-track:hover{
+    background-color: #eee;
+}
+
+::selection {
+    background: #ff0077;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-family: yaldevi-reg;
+    font-size: 100px;
+    -webkit-text-fill-color: $h-color;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.promo-container {
+	height: 100vh;
+    background-image: url("../media/lepetilo.svg");
+    /* background-color: aliceblue; */
+    /* background-position-y: 120px;
+    background-position-x: 195px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: animate;
+    animation-duration: 3s;
+}
+
+@keyframes animate {
+    0% { 
+        opacity: 0; 
+    }
+
+    100% { 
+        opacity: 100%; 
+    }
+}
+
+header {
+    height: 67px;
+}
+
+header .container {
+    height: 100%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_footer {
+    height: 100%;    
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+	display: flex;
+    height: 100%;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* cursor: pointer; */
+}
+
+.nav-container ul {
+	display: flex;
+	height: 100%;
+}
+
+nav li { 
+	display: flex;
+	align-items: center;
+}
+
+nav a { 
+	font-family: yaldevi-reg;
+	font-size: 18px;
+	color: #111;
+    padding: 0 19px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FD4C6C;
+    transition: .3s;
+    /* font-family: yaldevi-med; */
+} 
+
+h3 {
+    font-family: yaldevi-ex-l;
+    font-size: 24px;
+    color: #111;
+}
+
+.promo-container h3 {
+    text-align: center;
+    padding-top: 36%;
+    background-image: linear-gradient(to right, #FD4C6C 0%, #FF58BC 13.29%, #5918DF 25.52%, #1593e3 36.46%, #58D7FF 47.92%, #1593e3 60.94%, #5918DF 73.44%, #FF58BC 86.98%, #FD4C6C 100%);
+    background-size: 33%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: gradient;
+    animation-timing-function: ease;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+/*ABOUT*/
+
+// .sec_container {
+//     display: flex;
+//     margin-bottom: 100px;
+// }
+
+p {
+    font-family: yaldevi-l;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.container p {
+    padding-top: 90px;
+}
+
+.text-about {
+	display: flex;
+	flex-direction: column;
+    margin-left: -1270px;
+    padding-top: 220px;
+    align-items: center;
+    max-width: 400px;
+}
+
+.container .girl-pic {
+    display: flex;
+	justify-content: center;
+	padding-top: 130px;
+    padding-left: 140px;
+}
+
+.bold {
+    position: relative;
+    left: -320px;
+    top: -50px;
+    z-index: -5;
+    opacity: 0;
+}
+
+.pink {
+    position: relative;
+    left: -820px;
+    top: -50px;
+    z-index: -5;
+    opacity: 0;
+}
+
+.red {
+    position: relative;
+    left: -1370px;
+    top: -50px;
+    z-index: -5;
+    opacity: 0;
+}
+
+.container button {
+    margin-top: 75px;
+}
+
+button {
+     width: 195px;
+    height: 50px;
+    font-family: yaldevi-reg;
+    font-size: 18px;
+    color: #555;
+    border: solid 3px transparent;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(98.67deg, #FD4C6C 0.96%, #FF58BC 99.43%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #f6f6f6 inset;
+    outline: none; 
+    cursor: pointer; 
+}
+
+button:hover { 
+    box-shadow: none;
+    color: #fff;
+    transition: .3s;
+}
+
+.girl:hover~img {
+    opacity: 1;
+    transition: .7s;
+}
+
+.girl:not(:hover)~img {
+    transition: .7s;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+/* BLOG */
+
+.blog .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    background-image: linear-gradient(to right, $radicalRed, $hotPink);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blog .slider {
+    width: 100%;
+    // grid-column: 2/3;
+    // grid-row: 1/6;
+}
+
+.blog .slide {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    max-height: 400px;
+}
+
+.blog .slide img {
+    /* max-height: 500px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+// .slider {
+//   width: 600px;
+//   margin: 20px auto;
+//   text-align: center;
+//   padding: 20px;
+//   color: #fff;
+// }
+// .slider .slide {
+//   padding: 40px;
+// }
+// .slider .slide .child-element {
+//   -webkit-transition: all 0.2s ease;
+//   transition: all 0.2s ease;
+//   background: red;
+//   width: 100%;
+//   height: 150px;
+// }
+// .slider .slide.slick-center .child-element {
+//   background: rebeccapurple;
+//   -webkit-transform: translate(-70px, 0px);
+//           transform: translate(-70px, 0px);
+//   width: calc(100% + 140px);
+//   max-width: initial;
+// }
+
+
+/* PORTFOLIO */
+
+// .portfolio {
+//     display: flex;
+//     justify-content: center;
+//     align-self: center;
+//     min-height: 100vh;
+// }
+
+.portfolio .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    background-image: linear-gradient(to right, $radicalRed, $hotPink);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid_container {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+
+.grid_container .box {
+    background: #333;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: $white;
+    transition: .5s;
+}
+
+.grid_container .box:hover {
+    background-color: $radicalRed;
+}
+
+.grid_container .box img { 
+    position: relative;
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.grid_container .box:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.grid_container .box:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.grid_container .box:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.grid_container .box:nth-child(5) {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+@media (max-width: 991px) {
+    .grid_container {
+        grid-template-columns: repeat(auto-fill,minmax(50%, 1fr));
+        grid-template-rows: minmax(auto, auto);
+    }
+
+    .grid_container .box {
+        grid-column: unset !important;
+        grid-row: unset !important;
+    }
+}
+
+/*VIDEO*/
+
+/*
+  Player Skin Designer for Video.js
+  http://videojs.com
+
+  To customize the player skin edit 
+  the CSS below. Click "details" 
+  below to add comments or questions.
+  This file uses some SCSS. Learn more  
+  at http://sass-lang.com/guide)
+
+  This designer can be linked to at:
+  https://codepen.io/heff/pen/EarCt/left/?editors=010
+*/
+
+// The following are SCSS variables to automate some of the values.
+// But don't feel limited by them. Change/replace whatever you want. 
+
+// The color of icons, text, and the big play button border.
+// Try changing to #0f0
+$primary-foreground-color: #fff; // #fff default
+
+// The default color of control backgrounds is mostly black but with a little
+// bit of blue so it can still be seen on all-black video frames, which are common.
+// Try changing to #900
+$primary-background-color: #FD4C6C;  // #2B333F default
+
+// Try changing to true
+$center-big-play-button: true; // true default
+
+.video-js {
+  /* The base font size controls the size of everything, not just text.
+     All dimensions use em-based sizes so that the scale along with the font size.
+     Try increasing it to 15px and see what happens. */
+  font-size: 10px;
+
+  /* The main font color changes the ICON COLORS as well as the text */
+  color: $primary-foreground-color;
+}
+
+/* The "Big Play Button" is the play button that shows before the video plays.
+   To center it set the align values to center and middle. The typical location
+   of the button is the center, but there is trend towards moving it to a corner
+   where it gets out of the way of valuable content in the poster image.*/
+.vjs-default-skin .vjs-big-play-button {
+  /* The font size is what makes the big play button...big. 
+     All width/height values use ems, which are a multiple of the font size.
+     If the .video-js font-size is 10px, then 3em equals 30px.*/
+  font-size: 3em;
+
+  /* We're using SCSS vars here because the values are used in multiple places.
+     Now that font size is set, the following em values will be a multiple of the
+     new font size. If the font-size is 3em (30px), then setting any of
+     the following values to 3em would equal 30px. 3 * font-size. */
+  $big-play-width: 3em; 
+  /* 1.5em = 45px default */
+  $big-play-height: 3em;
+
+  line-height: $big-play-height;
+  height: $big-play-height;
+  width: $big-play-width;
+
+  /* 0.06666em = 2px default */
+  border: 0.06666em solid $primary-foreground-color;
+  /* 0.3em = 9px default */
+  border-radius: 3em;
+
+  @if $center-big-play-button {
+    /* Align center */
+    left: 50%;
+    top: 50%;
+    margin-left: -($big-play-width / 2);
+    margin-top: -($big-play-height / 2);   
+  } @else {
+    /* Align top left. 0.5em = 15px default */
+    left: 0.5em;
+    top: 0.5em;
+  }
+}
+
+/* The default color of control backgrounds is mostly black but with a little
+   bit of blue so it can still be seen on all-black video frames, which are common. */
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+  /* IE8 - has no alpha support */
+  background-color: $primary-background-color;
+  /* Opacity: 1.0 = 100%, 0.0 = 0% */
+  background-color: rgba($primary-background-color, 0.7);
+}
+
+// Make a slightly lighter version of the main background
+// for the slider background.
+$slider-bg-color: lighten($primary-background-color, 33%);
+
+/* Slider - used for Volume bar and Progress bar */
+.video-js .vjs-slider {
+  background-color: $slider-bg-color;
+  background-color: rgba($slider-bg-color, 0.5);
+}
+
+/* The slider bar color is used for the progress bar and the volume bar
+   (the first two can be removed after a fix that's coming) */
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+  background: $primary-foreground-color;
+}
+
+/* The main progress bar also has a bar that shows how much has been loaded. */
+.video-js .vjs-load-progress {
+  /* For IE8 we'll lighten the color */
+  background: lighten($slider-bg-color, 25%);
+  /* Otherwise we'll rely on stacked opacities */
+  background: rgba($slider-bg-color, 0.5);
+}
+
+/* The load progress bar also has internal divs that represent
+   smaller disconnected loaded time ranges */
+.video-js .vjs-load-progress div {
+  /* For IE8 we'll lighten the color */
+  background: lighten($slider-bg-color, 50%);
+  /* Otherwise we'll rely on stacked opacities */
+  background: rgba($slider-bg-color, 0.75);
+}
+
+
+
+.video {
+    height: 400px;
+}
+
+/* PRICE */
+
+
+.price .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    background-image: linear-gradient(to right, $radicalRed, $hotPink);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.price .price-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // margin-bottom: 480px;
+}
+
+.price-cards .card,
+.price-cards .big-card {
+    // flex-basis: 17%;
+    // min-height: 355px;
+    // padding: 15px 0 20px 0;
+    // border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    position: relative;
+}
+
+.price-cards .card:first-child,
+.price-cards .card:last-child {
+    height: 400px;
+    width: 250px;
+    border: 3px solid $radicalRed;
+    border-radius: 30px;
+}
+
+.price-cards .color-circ {
+    height: 400px;
+    width: 250px;
+    border-radius: 25px;
+    clip-path: circle(240px at 30px 50px);
+    cursor: pointer;
+}
+
+.price-cards .first-circ{
+    background-image: linear-gradient(to right, $radicalRed ,#FD4F81);
+}
+
+.price-cards .sec-circ{
+    background-image: linear-gradient(to right, #FE5088 ,#FE54A2);
+}
+
+.price-cards .third-circ{
+    background-image: linear-gradient(to right, #FE55A9 ,$hotPink);
+}
+
+.price-cards .card:first-child h3,
+.price-cards .card:last-child h3 {
+    font-family: yaldevi-reg;
+    font-size: 36px;
+    -webkit-text-fill-color: $white;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.price-cards .card:first-child h2,
+.price-cards .card:last-child h2 {
+    font-family: yaldevi-b;
+    font-size: 200px;
+    -webkit-text-fill-color: $bg-color;
+    text-align: center;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.price-cards .big-card {
+    height: 500px;
+    width: 320px;
+    border: 3px solid $radicalRed;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.price-cards .big-card .color-circ {
+    height: 440px;
+    width: 320px;
+    border-radius: 35px;
+    background-color: $radicalRed;
+    clip-path: circle(350px at 30px 50px);
+}
+
+.price-cards .big-card h3{
+    font-family: yaldevi-reg;
+    font-size: 48px;
+    -webkit-text-fill-color: $white;
+    text-align: center;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.price-cards .big-card h2{
+    font-family: yaldevi-b;
+    font-size: 288px;
+    -webkit-text-fill-color: $bg-color;
+    text-align: center;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.price-cards .card a,
+.price-cards .big-card a {
+    font-family: yaldevi-reg;
+    font-size: 24px;
+    background-image: linear-gradient(to right, $radicalRed, $hotPink);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card:hover,
+.big-card:hover {
+    box-shadow: 0px 10px 70px rgba(253, 76, 108, 0.616);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.card:not(:hover),
+.big-card:not(:hover) {
+    transition: .3s;
+}
+
+// .price-cards .card:last-child {
+//     height: 400px;
+//     width: 250px;
+//     border-radius: 30px;
+//     background-color: $radicalRed;
+// }
+
+/* CONTACT */
+
+
+
+
+// #fs-frm input,
+// #fs-frm select,
+// #fs-frm textarea,
+// #fs-frm fieldset,
+// #fs-frm optgroup,
+// #fs-frm label,
+// #fs-frm #card-element:disabled {
+//   font-family: yaldevi-reg;
+//   font-size: 100%;
+//   color: inherit;
+//   border: none;
+//   border-radius: 0;
+//   display: block;
+//   width: 100%;
+//   padding: 0;
+//   margin: 0;
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+// }
+// #fs-frm label,
+// #fs-frm legend,
+// #fs-frm ::placeholder {
+//   font-size: 18px;
+//   margin-bottom: .5em;
+//   padding-top: .2em;
+//   display: flex;
+//   align-items: baseline;
+// }
+
+// /* border, padding, margin, width */
+// #fs-frm input,
+// #fs-frm select,
+// #fs-frm textarea,
+// #fs-frm #card-element {
+//   border: 1px solid rgba(0,0,0,0.2);
+//   background-color: rgba(255,255,255,0.9);
+//   padding: .75em 1em;
+//   margin-bottom: 1.5em;
+// }
+// #fs-frm input:focus,
+// #fs-frm select:focus,
+// #fs-frm textarea:focus {
+//   background-color: white;
+//   outline-style: solid;
+//   outline-width: thin;
+//   outline-color: gray;
+//   outline-offset: -1px;
+// }
+// #fs-frm [type="text"],
+// #fs-frm [type="email"] {
+//   width: 100%;
+// }
+// #fs-frm [type="button"],
+// #fs-frm [type="submit"],
+// #fs-frm [type="reset"] {
+//   width: auto;
+//   cursor: pointer;
+//   -webkit-appearance: button;
+//   -moz-appearance: button;
+//   appearance: button;
+// }
+// #fs-frm [type="button"]:focus,
+// #fs-frm [type="submit"]:focus,
+// #fs-frm [type="reset"]:focus {
+//   outline: none;
+// }
+// #fs-frm [type="submit"],
+// #fs-frm [type="reset"] {
+//   margin-bottom: 0;
+// }
+// #fs-frm select {
+//   text-transform: none;
+// }
+
+// #fs-frm [type="checkbox"] {
+//   -webkit-appearance: checkbox;
+//   -moz-appearance: checkbox;
+//   appearance: checkbox;
+//   display: inline-block;
+//   width: auto;
+//   margin: 0 .5em 0 0 !important;
+// }
+
+// #fs-frm [type="radio"] {
+//   -webkit-appearance: radio;
+//   -moz-appearance: radio;
+//   appearance: radio;
+// }
+
+// /* address, locale */
+// #fs-frm fieldset.locale input[name="city"],
+// #fs-frm fieldset.locale select[name="state"],
+// #fs-frm fieldset.locale input[name="postal-code"] {
+//   display: inline;
+// }
+// #fs-frm fieldset.locale input[name="city"] {
+//   width: 52%;
+// }
+// #fs-frm fieldset.locale select[name="state"],
+// #fs-frm fieldset.locale input[name="postal-code"] {
+//   width: 20%;
+// }
+// #fs-frm fieldset.locale input[name="city"],
+// #fs-frm fieldset.locale select[name="state"] {
+//   margin-right: 3%;
+// }
+
+
+
+/* CONTACT */
+.contact {
+    margin-top: 100px;
+}
+
+fieldset {
+    border-width: 0;
+}
+
+.contact .container {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.group { 
+    position: relative; 
+    margin-bottom: 45px; 
+}
+
+input,
+textarea {
+    font-size: 18px;
+    width: 650px;
+    padding: 10px 0;
+    display: block;
+    background-color: $bg-color;
+}
+
+input,
+textarea {
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus { 
+    outline: none; 
+} 
+  
+  /* LABEL ======================================= */
+  label {
+    color: #757575; 
+    font-family: yaldevi-reg;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all; 
+  }
+  
+  /* active state */
+  input:focus ~ label, 
+  input:valid ~ label,
+  textarea:focus ~ label, 
+  textarea:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: $radicalRed;
+  }
+  
+  /* BOTTOM BARS ================================= */
+  .bar 	{ 
+    position: relative; 
+    display: block; 
+    width: 650px; 
+}
+
+  .bar:before, 
+  .bar:after {
+    content:'';
+    height: 2px; 
+    width: 0;
+    bottom: 1px; 
+    position: absolute;
+    background: $radicalRed; 
+    transition: 0.2s ease all; 
+  }
+
+  .bar:before { left:50%; }
+  .bar:after  { right:50%; }
+  
+  /* active state */
+  input:focus ~ .bar:before, 
+  input:focus ~ .bar:after,
+  textarea:focus ~ .bar:before, 
+  textarea:focus ~ .bar:after {
+    width: 50%;
+  }
+
+  
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+
+
+/* QUOTE */
+
+.quote  img {
+    display: block;
+    margin: 100px 30% 0;
+}
+
+.quote  .slider p {
+    font-family: yaldevi-reg;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    white-space: pre;
+    padding-bottom: 20px;
+}
+
+.quote  .slider img {
+    height: 54px;
+    padding-top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+
+.footer-img {
+    position: relative;
+}
+
+.footer img {
+    // position: relative;
+    width: 100vw;
+}
+
+.pink_f,
+.red_f,
+.bold_f {
+    top: 50px;
+}
+
+.pink_f { z-index: 1; }
+.red_f { z-index: 2; 
+margin-top: -200px;}
+.bold_f { z-index: 3; 
+margin-top: -300px;}
+
+
+/* UP */
+#toTop {
+    width: 40px;
+    height: 40px;
+    border: 2px solid $radicalRed;
+    border-radius: 50%;
+    background: $bg-color;
+    opacity: .5;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 15px; /* отступ кнопки от нижнего края страницы*/
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    color: $radicalRed;
+    font-family:verdana;
+    font-size: 25px;
+}
+
+#toTop:hover {
+    opacity: 1;
+    transition: .2s;
+}
+
+#toTop:not(:hover) {
+    transition: .2s;
+}
+
+@font-face {
+	font-family: wamelo;
+	src: url("../fonts/wamelo/Wamelo.otf");
+}
+
+@font-face {
+	font-family: yaldevi-ex-l;
+	src: url("../fonts/yaldevi/YaldeviColombo-ExtraLight.ttf");
+}
+
+@font-face {
+	font-family: yaldevi-l;
+	src: url("../fonts/yaldevi/YaldeviColombo-Light.ttf");
+}
+
+@font-face {
+	font-family: yaldevi-reg;
+	src: url("../fonts/yaldevi/YaldeviColombo-Regular.ttf");
+}
+
+@font-face {
+	font-family: yaldevi-med;
+	src: url("../fonts/yaldevi/YaldeviColombo-Medium.ttf");
+}
+
+@font-face {
+	font-family: yaldevi-b;
+	src: url("../fonts/yaldevi/YaldeviColombo-Bold.ttf");
+}
