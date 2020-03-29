@@ -81,15 +81,6 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
-.container_footer {
-  height: 100%;
-  max-width: 1170px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
 .nav-container {
   display: flex;
   height: 100%;
@@ -615,10 +606,31 @@ input:focus ~ .highlight {
   display: block;
   margin: 0 auto;
 }
+.container_footer {
+  height: 100%;
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+footer .nav-container {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+footer nav a {
+  padding: 0 30px;
+}
 .footer-img {
   position: relative;
 }
-.footer img {
+footer img {
   width: 100vw;
 }
 .pink_f,
