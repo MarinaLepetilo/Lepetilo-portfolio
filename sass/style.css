@@ -25,6 +25,7 @@ html {
   box-sizing: border-box;
   transition: 0.15s;
   cursor: dot;
+  z-index: 25;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -48,7 +49,6 @@ h2 {
   font-size: 100px;
   -webkit-text-fill-color: #d3d3d3;
   text-align: center;
-  margin-bottom: 75px;
 }
 .promo-container {
   height: 100vh;
@@ -68,6 +68,12 @@ h2 {
 }
 header {
   height: 67px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(10px);
 }
 header .container {
   height: 100%;
@@ -231,6 +237,11 @@ button:hover {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.container .title img {
+  margin-top: -100px;
+  margin-bottom: 60px;
+  margin-left: 30%;
+}
 .blog .slider {
   width: 100%;
 }
@@ -280,7 +291,8 @@ button:hover {
 .grid_container .box img {
   position: relative;
   max-width: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 .grid_container .box:nth-child(1) {
   grid-column: span 2;

@@ -13,8 +13,12 @@ $(document).mousemove(function(e) {
 $(document).ready(function() {
     $('.slider').slick(
         {
-            arrows: true,
+            arrows: false,
             dots: true,
+            infinite: true,
+            speed: 400,
+            fade: true,
+            cssEase: 'linear'
         }
     );
 });
@@ -58,9 +62,8 @@ $(function(){
     autoplaySpeed: 7000,
   });
 
-  /* UP */
 
-
+/* UP */
 $(function() {
   $(window).scroll(function() {
     if($(this).scrollTop() != 0) {

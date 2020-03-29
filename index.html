@@ -6,8 +6,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/slick-theme.css">
+    <!-- <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css"> -->
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="shortcut icon" type="image/icon" href="./media/favicon.ico"/>
     <title><Lepetilo/></title>
@@ -22,6 +22,7 @@
                 <div class="nav-container">
                     <nav>
                         <ul>
+                            <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#blog">Blog</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
@@ -56,8 +57,11 @@
     </section>
 
     <section class="blog" id="blog">
-        <div class="container">        
-            <h2 class="section-title price__title">Blog</h2>
+        <div class="container">   
+            <div class="title">    
+                <h2 class="section-title blog__title">Blog</h2>
+                <img src="./media/blog_svg.svg" alt="">
+            </div>     
             <div class="slider">
                 <div class="slide">
                     <img src="./media/slide2.jpg" alt="volcano">
@@ -77,7 +81,10 @@
 
     <section class="portfolio" id="portfolio">
         <div class="container">
-        <h2 class="section-title price__title">Portfolio</h2>
+            <div class="title">
+                <h2 class="section-title portfolio__title">Portfolio</h2>
+                <img src="./media/portfolio_svg.svg" alt="">
+            </div>    
         <div class="grid_container">
             <div class="box">
                 <div class="content">
@@ -134,7 +141,7 @@
     preload="auto"
     width="1280"
     height="528"
-    poster="./media/sea.jpg"
+
     data-setup="{}" >
         
         <!-- id="my_video_1" class="video-js " width="640px" height="267px"
@@ -154,7 +161,10 @@
 
 <section class="price" id="price">
     <div class="container">
-        <h2 class="section-title price__title">Price</h2>
+        <div class="title">
+            <h2 class="section-title price__title">Price</h2>
+            <img src="./media/price_svg.svg" alt="">
+        </div>    
         <div class="price-cards">
             <div class="card">
             <div class="color-circ first-circ">
@@ -187,7 +197,10 @@
 
 <section class="contact" id="contact">
     <div class="container">
-        <h2 class="section-title contact__title">Contact</h2>
+        <div class="title">
+            <h2 class="section-title contact__title">Contact</h2>
+            <img src="./media/contact_svg.svg" alt="">
+        </div>
         <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/xzbvwlkb" method="post">
             <fieldset id="fs-frm-inputs">
                 <div class="group">
@@ -260,7 +273,7 @@ then by all means paint and that voice will be silenced.</p>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="./js/slick.min.js"></script>
+    <!-- <script src="./js/slick.min.js"></script> -->
     <script src="./js/scrpt.js"></script>
 
 </body>
