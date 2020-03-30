@@ -52,7 +52,7 @@ h2 {
 }
 .promo-container {
   height: 100vh;
-  background-image: url("../media/lepetilo.svg");
+  background-image: url("../media/titles/lepetilo.svg");
   background-position: center;
   background-repeat: no-repeat;
   animation: animate;
@@ -294,16 +294,16 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
 }
-#lightbox.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 #lightbox img {
   max-width: 90%;
   max-height: 80%;
   padding: 4px;
   background-color: black;
+}
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .grid_container .box:nth-child(1) {
   grid-column: span 2;
@@ -490,13 +490,13 @@ button:hover {
 .contact {
   margin-top: 100px;
 }
-fieldset {
-  border-width: 0;
-}
 .contact .container {
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+fieldset {
+  border-width: 0;
 }
 .group {
   position: relative;
@@ -509,18 +509,15 @@ textarea {
   padding: 10px 0;
   display: block;
   background-color: #f1f1f1;
-}
-input,
-textarea {
   border: none;
   border-bottom: 1px solid #757575;
-}
-textarea {
-  resize: none;
 }
 input:focus,
 textarea:focus {
   outline: none;
+}
+textarea {
+  resize: none;
 }
 label {
   color: #757575;
@@ -636,6 +633,25 @@ input:focus ~ .highlight {
   margin: 0;
   padding: 0;
 }
+.post_scriptum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 45%;
+}
+.post_scriptum .heart {
+  width: 30px;
+  padding: 0 10px;
+}
+.post_scriptum .ps_first {
+  display: flex;
+  padding-bottom: 20px;
+}
+.post_scriptum .ps_second {
+  width: 110px;
+  margin-bottom: 50px;
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -648,11 +664,11 @@ footer .nav-container {
 footer nav a {
   padding: 0 35px;
 }
-.footer-img {
-  position: relative;
-}
 footer img {
   width: 100vw;
+}
+.footer-img {
+  position: relative;
 }
 .pink_f,
 .red_f,

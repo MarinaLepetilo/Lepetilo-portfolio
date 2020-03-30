@@ -72,7 +72,7 @@ h2 {
 
 .promo-container {
 	height: 100vh;
-    background-image: url("../media/lepetilo.svg");
+    background-image: url("../media/titles/lepetilo.svg");
     /* background-color: aliceblue; */
     /* background-position-y: 120px;
     background-position-x: 195px; */
@@ -369,14 +369,13 @@ button {
 &:hover {
     background-color: $radicalRed;
     }
-}
 
-.grid_container .box img { 
-    position: relative;
-    max-width: 60%;
-    margin-bottom: 20px;
-    margin-top: 0;
-
+    img {
+        position: relative;
+        max-width: 60%;
+        margin-bottom: 20px;
+        margin-top: 0; 
+    }
 }
 
 #lightbox {
@@ -387,21 +386,20 @@ button {
     height: 100%;
     background-color: rgba(0, 0, 0, .8);
     display: none;
-  }
+
+    img {
+        max-width: 90%;
+        max-height: 80%;
+        padding: 4px;
+        background-color: black;
+    }
+}
   
-  #lightbox.active {
+#lightbox.active {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  #lightbox img {
-    max-width: 90%;
-    max-height: 80%;
-    padding: 4px;
-    background-color: black;
-    // border: 2px solid white;
-  }
+}
 
 .grid_container .box:nth-child(1) {
     grid-column: span 2;
@@ -596,9 +594,11 @@ $slider-bg-color: lighten($primary-background-color, 33%);
     // margin-bottom: 480px;
 }
 
-.price-cards .card,
-.price-cards .big-card {
-    // flex-basis: 17%;
+.price-cards {
+
+    .card,
+    .big-card {
+        // flex-basis: 17%;
     // min-height: 355px;
     // padding: 15px 0 20px 0;
     // border-radius: 4px;
@@ -607,100 +607,102 @@ $slider-bg-color: lighten($primary-background-color, 33%);
     position: relative;
     cursor: pointer;
     position: relative;
-}
+    }
 
-.price-cards .card:first-child,
-.price-cards .card:last-child {
-    height: 400px;
-    width: 250px;
-    border: 3px solid $radicalRed;
-    border-radius: 30px;
-}
+    .card:first-child,
+    .card:last-child {
+        height: 400px;
+        width: 250px;
+        border: 3px solid $radicalRed;
+        border-radius: 30px;        
+    }
 
-.price-cards .color-circ {
-    height: 400px;
-    width: 250px;
-    border-radius: 25px;
-    clip-path: circle(240px at 30px 50px);
-    cursor: pointer;
-}
+    .color-circ {
+        height: 400px;
+        width: 250px;
+        border-radius: 25px;
+        clip-path: circle(240px at 30px 50px);
+        cursor: pointer;
+    }
 
-.price-cards .first-circ{
-    background-image: linear-gradient(to right, $radicalRed ,#FD4F81);
-}
+    .first-circ{
+        background-image: linear-gradient(to right, $radicalRed ,#FD4F81);
+    }
 
-.price-cards .sec-circ{
-    background-image: linear-gradient(to right, #FE5088 ,#FE54A2);
-}
+    .sec-circ{
+        background-image: linear-gradient(to right, #FE5088 ,#FE54A2);
+    }
 
-.price-cards .third-circ{
-    background-image: linear-gradient(to right, #FE55A9 ,$hotPink);
-}
+    .third-circ{
+        background-image: linear-gradient(to right, #FE55A9 ,$hotPink);
+    }
 
-.price-cards .card:first-child h3,
-.price-cards .card:last-child h3 {
-    font-family: yaldevi-reg;
-    font-size: 36px;
-    -webkit-text-fill-color: $white;
-    text-align: center;
-    padding-top: 15px;
-    cursor: pointer;
-}
+    .card:first-child h3,
+    .card:last-child h3 {
+        font-family: yaldevi-reg;
+        font-size: 36px;
+        -webkit-text-fill-color: $white;
+        text-align: center;
+        padding-top: 15px;
+        cursor: pointer;
+    }
 
-.price-cards .card:first-child h2,
-.price-cards .card:last-child h2 {
-    font-family: yaldevi-b;
-    font-size: 200px;
-    -webkit-text-fill-color: $bg-color;
-    text-align: center;
-    margin-bottom: 0px;
-    cursor: pointer;
-}
+    .card:first-child h2,
+    .card:last-child h2 {
+        font-family: yaldevi-b;
+        font-size: 200px;
+        -webkit-text-fill-color: $bg-color;
+        text-align: center;
+        margin-bottom: 0px;
+        cursor: pointer;
+    }
 
-.price-cards .big-card {
-    height: 500px;
-    width: 320px;
-    border: 3px solid $radicalRed;
-    border-radius: 40px;
-    cursor: pointer;
-}
+    .big-card {
+        height: 500px;
+        width: 320px;
+        border: 3px solid $radicalRed;
+        border-radius: 40px;
+        cursor: pointer;
 
-.price-cards .big-card .color-circ {
-    height: 440px;
-    width: 320px;
-    border-radius: 35px;
-    background-color: $radicalRed;
-    clip-path: circle(350px at 30px 50px);
-}
+        .color-circ {
+            height: 440px;
+            width: 320px;
+            border-radius: 35px;
+            background-color: $radicalRed;
+            clip-path: circle(350px at 30px 50px);
+        }
 
-.price-cards .big-card h3{
-    font-family: yaldevi-reg;
-    font-size: 48px;
-    -webkit-text-fill-color: $white;
-    text-align: center;
-    padding-top: 20px;
-    cursor: pointer;
-}
+        h3{
+            font-family: yaldevi-reg;
+            font-size: 48px;
+            -webkit-text-fill-color: $white;
+            text-align: center;
+            padding-top: 20px;
+            cursor: pointer;
+        }
 
-.price-cards .big-card h2{
-    font-family: yaldevi-b;
-    font-size: 288px;
-    -webkit-text-fill-color: $bg-color;
-    text-align: center;
-    margin-bottom: 0px;
-    cursor: pointer;
-}
+        h2{
+            font-family: yaldevi-b;
+            font-size: 288px;
+            -webkit-text-fill-color: $bg-color;
+            text-align: center;
+            margin-bottom: 0px;
+            cursor: pointer;
+        }
+    }
 
-.price-cards .card a,
-.price-cards .big-card a {
-    font-family: yaldevi-reg;
-    font-size: 24px;
-    background-image: linear-gradient(to right, $radicalRed, $hotPink);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-bottom: 30px;
-    text-align: center;
-    cursor: pointer;
+    .card a,
+    .big-card a {
+        font-family: yaldevi-reg;
+        font-size: 24px;
+        background-image: linear-gradient(to right, $radicalRed, $hotPink);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+
 }
 
 .card:hover,
@@ -839,16 +841,16 @@ $slider-bg-color: lighten($primary-background-color, 33%);
 /* CONTACT */
 .contact {
     margin-top: 100px;
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
 }
 
 fieldset {
     border-width: 0;
-}
-
-.contact .container {
-    flex-direction: column;
-    align-items: center;
-    position: relative;
 }
 
 .group { 
@@ -863,23 +865,18 @@ textarea {
     padding: 10px 0;
     display: block;
     background-color: $bg-color;
-}
-
-input,
-textarea {
     border: none;
     border-bottom: 1px solid #757575;
+
+&:focus {
+    outline: none;
+    }
 }
 
 textarea {
     resize: none;
 }
 
-input:focus,
-textarea:focus { 
-    outline: none; 
-} 
-  
   /* LABEL ======================================= */
   label {
     color: #757575; 
@@ -908,10 +905,10 @@ textarea:focus {
     position: relative; 
     display: block; 
     width: 650px; 
-}
 
-  .bar:before, 
-  .bar:after {
+
+  &:before, 
+  &:after {
     content:'';
     height: 2px; 
     width: 0;
@@ -921,9 +918,9 @@ textarea:focus {
     transition: 0.2s ease all; 
   }
 
-  .bar:before { left:50%; }
-  .bar:after  { right:50%; }
-  
+  &:before { left:50%; }
+  &:after  { right:50%; }
+  }
   /* active state */
   input:focus ~ .bar:before, 
   input:focus ~ .bar:after,
@@ -1001,28 +998,51 @@ textarea:focus {
     padding: 0;
 }
 
+.post_scriptum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 45%;
+
+    .heart {
+        width: 30px;
+        padding: 0 10px;
+    }
+
+    .ps_first {
+        display: flex;
+        padding-bottom: 20px;
+    }
+
+    .ps_second {
+        width: 110px;
+        margin-bottom: 50px;
+    }
+}
+
+
 footer {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-}
 
-footer .nav-container {
-    padding-top: 50px;
-    margin-bottom: 50px;
-}
+    .nav-container {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+    nav a {
+        padding: 0 35px;
+    }
 
-footer nav a {
-    padding: 0 35px;
-}
+    img {
+        // position: relative;
+        width: 100vw;
+    }
 
+}
 .footer-img {
     position: relative;
-}
-
-footer img {
-    // position: relative;
-    width: 100vw;
 }
 
 .pink_f,
